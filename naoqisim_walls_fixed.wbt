@@ -1,0 +1,127 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+  info [
+    "Aldebaran's Nao H25 V5.0"
+  ]
+  title "Aldebaran Nao H25 V5.0"
+  basicTimeStep 20
+  FPS 20
+  contactProperties [
+    ContactProperties {
+      material1 "NAO foot material"
+      coulombFriction [
+        7
+      ]
+      bounce 0.3
+      bounceVelocity 0.003
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.30698511638440457 -0.7671385835391475 -0.5632570744908614 2.1147622353247524
+  position -5.455335278767824 22.830315035274996 5.328536500165014
+  follow "NAO"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+PointLight {
+  ambientIntensity 1
+  intensity 0.6
+  location 2 0.9 0
+}
+Wall {
+  translation 3 0 -1
+  size 10 5 0.2
+  appearance Roughcast {
+    colorOverride 0 1 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+    IBLStrength 16
+  }
+}
+Wall {
+  translation -2 0 4
+  rotation 0 1 0 1.5707996938995747
+  name "wall(1)"
+  size 10 5 0.2
+  appearance Roughcast {
+    colorOverride 0 1 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+    IBLStrength 2
+  }
+}
+Wall {
+  translation 3 0 9
+  name "wall(2)"
+  size 10 5 0.2
+  appearance Roughcast {
+    colorOverride 0 1 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+    IBLStrength 2
+  }
+}
+Wall {
+  translation 8 0 4
+  rotation 0 1 0 1.5708003061004252
+  name "wall(3)"
+  size 10 5 0.2
+  appearance Roughcast {
+    colorOverride 0 1 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+    IBLStrength 16
+  }
+}
+Wall {
+  translation 3 0 9.39
+  rotation 0 1 0 -1.5707996938995747
+  name "wall(5)"
+  size 1 1 1
+  appearance Roughcast {
+    colorOverride 1 0 0
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+    IBLStrength 30
+  }
+}
+Nao {
+  hidden linearVelocity_0 2.7342213843936815e-06 3.562467789671559e-08 7.14432961133161e-09
+  hidden angularVelocity_0 1.4165765913277442e-07 9.770809877636232e-08 -1.2725950978828383e-05
+  hidden linearVelocity_11 4.341710535859463e-06 -5.260908449665908e-09 2.474743424792487e-08
+  hidden angularVelocity_11 1.4166040593917764e-07 9.770852876026284e-08 -1.2678895111368645e-05
+  hidden linearVelocity_18 3.498035057354791e-06 -2.786964370299574e-07 1.3569942204869695e-08
+  hidden angularVelocity_18 1.414247622922862e-07 9.917005903755832e-08 -1.6681353586915557e-05
+  hidden linearVelocity_19 3.461489413583538e-06 -1.3250065183552568e-06 7.040939127333254e-09
+  hidden angularVelocity_19 1.326664831279083e-07 9.917612936298065e-08 -1.6681425531570384e-05
+  hidden linearVelocity_20 3.476150601805106e-06 -2.209477730709737e-06 1.8989977916644988e-09
+  hidden angularVelocity_20 1.3266647682069325e-07 9.917458473978801e-08 -1.6681421777855333e-05
+  hidden rotation_23 0 0.9999999999999999 0 0.9599999988919178
+  hidden rotation_26 0 1 0 0.9599999988919495
+  hidden linearVelocity_30 3.480960924390971e-06 -2.525546165285739e-07 1.3580610007273941e-08
+  hidden angularVelocity_30 1.414260088617405e-07 9.916961023503438e-08 -1.6681369954456465e-05
+  hidden linearVelocity_31 3.4403450203166202e-06 -1.2926342747219206e-06 7.051711527742286e-09
+  hidden angularVelocity_31 1.5024294324349024e-07 9.916352146065e-08 -1.6681443385028384e-05
+  hidden linearVelocity_32 3.454439165317634e-06 -2.1762385251442543e-06 1.9259107017930077e-09
+  hidden angularVelocity_32 1.502429441836996e-07 9.91643219301013e-08 -1.6681439738410065e-05
+  hidden rotation_35 0 1 0 0.9599999988920568
+  hidden rotation_38 0 0.9999999999999999 0 0.9599999988925242
+  hidden linearVelocity_42 1.4135399534136554e-06 6.315252319997454e-08 -2.996586251616429e-08
+  hidden angularVelocity_42 1.4294384225624827e-07 -1.7893323265083162e-06 -1.0833203331465109e-05
+  hidden linearVelocity_52 1.4052726816235071e-06 7.365975419207897e-08 1.6135328574516075e-08
+  hidden angularVelocity_52 1.4062105787362935e-07 1.983279788574435e-06 -1.0832157213237265e-05
+  translation 3.999907009636021 0.3315932211792684 3.4976309944645676
+  rotation 0.999999918570312 -0.0003132576683264488 0.000254418950514455 -1.5704268485432933
+  controller "naoqisim"
+  controllerArgs "9559"
+  synchronization FALSE
+}
