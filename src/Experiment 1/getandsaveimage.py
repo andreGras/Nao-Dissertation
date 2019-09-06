@@ -91,7 +91,7 @@ def takeImage():
 
   print("total: " + str(summyR+summyB+summyG))
 
-  # process()
+  process()
 
 def process():
   """
